@@ -12,8 +12,22 @@ def check_pass(pwd, hashed):
 
 def check_teacher_exists(username):
     # Check for unique username, returns false when username is already taken
-    response = supabase.table("teachers").select("username").eq("username", username).execute()
-    return len(response.data) > 0 
+    try:
+        response = (
+            supabase
+            .table("teachers")
+            .select("username")
+            .eq("username", username)
+            .execute()
+        )
+        print(response)
+        return len(response.data) > 0
+
+    except Exception as e:
+        import streamlit as st
+        st.error(str(e))
+        print(e)
+        return False
 
 
 
