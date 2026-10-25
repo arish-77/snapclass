@@ -9,7 +9,7 @@ The platform allows teachers to create classes, students to enroll using QR code
 <!-- Add your project screenshots to the screenshots/ folder -->
 
 ### Dashboard
-![SnapClass Dashboard](Screenshots/dashboard.png)
+![SnapClass Dashboard](Screenshots/Dashboard.png)
 
 ### Facial Recognition Attendance
 ![Facial Recognition](Screenshots/face_recog.png)
